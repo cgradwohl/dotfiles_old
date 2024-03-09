@@ -5,10 +5,10 @@ import = ["~/.config/alacritty/themes/themes/everforest_dark.toml"]
 program = "/opt/homebrew/bin/bash"
 
 [font]
-size = 12
+size = 16
 
-#[font.normal]
-#family = "UbuntuNerdFont-Regular"
+[font.normal]
+family = "UbuntuMono Nerd Font"
 
 #[window]
 #decorations = "none"
