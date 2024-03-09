@@ -1,12 +1,8 @@
-export XDG_CONFIG_HOME="$HOME/.config"
-export PS1="\[\e[32m\]\w\[\e[m\]\$(git_branch)\[\e[0m\] $ "
+export PS1='\[\e[32m\]\w\[\e[0m\]$(git_branch) $ '
 
 git_branch() {
-  branch=$(git branch 2>/dev/null | sed -n '/\* /s///p')
-  if [ ! -z "$branch" ]; then
-    echo " (\[\e[34m\]$branch\[\e[0m\])"
-  fi
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# set homebrew environment
+export XDG_CONFIG_HOME="$HOME/.config"
 eval "$(/opt/homebrew/bin/brew shellenv)"
