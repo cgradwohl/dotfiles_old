@@ -1,6 +1,3 @@
-# homebrew
-export PATH=$HOME/bin:/opt/homebrew/bin:$PATH
-
 # dotfiles
 export XDG_CONFIG_HOME="$HOME/.config"
 
