@@ -6,6 +6,9 @@ git_branch() {
 # shell prompt
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
 
+# vscode
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # dotfiles
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -14,13 +17,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-# ruby
-source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
-
 # python
 export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
