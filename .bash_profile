@@ -2,8 +2,8 @@
 
 # source bashrc
 if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
+	source ~/.bashrc
 fi
 
-# Add Visual Studio Code (code)
+# vs code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
