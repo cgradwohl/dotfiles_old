@@ -7,25 +7,17 @@
 # clone dotfiles
 git clone git@github.com:cgradwohl/dotfiles.git
 
-# move the files out of dotfiles into system destination
-mv ~/dotfiles/.config ~/.config 
-mv ~/dotfiles/.bashrc ~/.bashrc
-mv ~/dotfiles/.bash_profile ~/.bash_profile
+# copy the files out of dotfiles into system destinations
+# cp ~/dotfiles/.config ~/.config 
+# cp ~/dotfiles/.bashrc ~/.bashrc
+# cp ~/dotfiles/.bash_profile ~/.bash_profile
+# cp ~/dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
-# delete them so you can setup symlinks
-rm -rf ~/dotfiles/.config
-rm ~/dotfiles/.bashrc
-rm ~/dotfiles/.bash_profile
-
-# copy files back into ~/dotfiles
-mv ~/.config ~/dotfiles/.config
-mv ~/.bashrc ~/dotfiles/.bashrc
-mv ~/.bash_profile ~/dotfiles/.bash_profile
-
-# setup up symlink
+# setup up symlink from dotfiles folder and system destinations
 ln -s ~/dotfiles/.config ~/.config
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ```
     
 - install brew: https://brew.sh/
