@@ -1,8 +1,8 @@
-## System Setup
+## Tools
+### Window Manager
+- Amethyst: https://ianyh.com/amethyst/
 
-- install amethyst: https://ianyh.com/amethyst/
-- clone dotfiles and set up symlinks: [github.com/cgradwohl/dotfiles](https://github.com/cgradwohl/dotfiles)
-    
+## System Setup
 ```bash
 # clone dotfiles
 git clone git@github.com:cgradwohl/dotfiles.git
