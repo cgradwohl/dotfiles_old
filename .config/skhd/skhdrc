@@ -1,2 +1,0 @@
-# instead of just `alacritty` or `/opt/homebrew/bin/alacritty`
-cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
