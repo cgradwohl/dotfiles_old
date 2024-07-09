@@ -1,7 +1,3 @@
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
-fi
-
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -9,3 +5,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+if [ -f ~/.bashrc ]; then
+	source ~/.bashrc
+fi
