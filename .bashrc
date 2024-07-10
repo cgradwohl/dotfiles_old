@@ -14,3 +14,4 @@ eval "$(pyenv virtualenv-init -)"
 
 # alias
 alias idea='open -na "IntelliJ IDEA Ultimate.app"'
+alias pycharm='open -na "PyCharm Professional Edition.app"'
