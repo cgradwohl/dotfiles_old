@@ -13,4 +13,4 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # alias
-alias idea=open -na "IntelliJ IDEA Ultimate.app"
+alias idea='open -na "IntelliJ IDEA Ultimate.app"'
