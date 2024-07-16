@@ -15,3 +15,8 @@ eval "$(pyenv virtualenv-init -)"
 # alias
 alias idea='open -na "IntelliJ IDEA Ultimate.app"'
 alias pycharm='open -na "PyCharm Professional Edition.app"'
+
+# node
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
