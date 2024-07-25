@@ -1,3 +1,7 @@
+# OLD DOTFILES
+I recently discovered GNU Stow and will be now manage my dotfiles using stow modules instead of manually creating symlinks.
+
+
 ## System Setup
 ```bash
 # clone dotfiles
